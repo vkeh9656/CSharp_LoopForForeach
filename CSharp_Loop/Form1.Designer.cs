@@ -28,20 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.tboxResult = new System.Windows.Forms.TextBox();
+            this.btnFor = new System.Windows.Forms.Button();
+            this.btnForeach = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // tboxResult
+            // 
+            this.tboxResult.Location = new System.Drawing.Point(12, 12);
+            this.tboxResult.Multiline = true;
+            this.tboxResult.Name = "tboxResult";
+            this.tboxResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tboxResult.Size = new System.Drawing.Size(398, 362);
+            this.tboxResult.TabIndex = 0;
+            // 
+            // btnFor
+            // 
+            this.btnFor.Location = new System.Drawing.Point(416, 12);
+            this.btnFor.Name = "btnFor";
+            this.btnFor.Size = new System.Drawing.Size(141, 43);
+            this.btnFor.TabIndex = 1;
+            this.btnFor.Text = "For 문";
+            this.btnFor.UseVisualStyleBackColor = true;
+            this.btnFor.Click += new System.EventHandler(this.btnFor_Click);
+            // 
+            // btnForeach
+            // 
+            this.btnForeach.Location = new System.Drawing.Point(416, 71);
+            this.btnForeach.Name = "btnForeach";
+            this.btnForeach.Size = new System.Drawing.Size(141, 43);
+            this.btnForeach.TabIndex = 2;
+            this.btnForeach.Text = "Foreach 문";
+            this.btnForeach.UseVisualStyleBackColor = true;
+            this.btnForeach.Click += new System.EventHandler(this.btnForeach_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(563, 387);
+            this.Controls.Add(this.btnForeach);
+            this.Controls.Add(this.btnFor);
+            this.Controls.Add(this.tboxResult);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox tboxResult;
+        private System.Windows.Forms.Button btnFor;
+        private System.Windows.Forms.Button btnForeach;
     }
 }
 
